@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# R / renv
+renv/library/
+renv/staging/
+renv/sandbox/
+.Rprofile
+*.Rproj.user/
+
+# shinyapps.io deployment metadata
+rsconnect/
+
+# R session artifacts
+.RData
+.Rhistory
+*.Rout
+
+# Jupyter checkpoints (not needed in repo)
+.ipynb_checkpoints/
+
+# reference folder (local-only scratch material)
+reference/

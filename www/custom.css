@@ -1,0 +1,606 @@
+/* ==============================================================================
+   custom.css — Professional dark theme for the Equity Comparison Tool
+   ============================================================================== */
+
+/* --- CSS Variables --- */
+:root {
+  --bg-primary: #1a1a2e;
+  --bg-secondary: #16213e;
+  --bg-accent: #0f3460;
+  --bg-hover: #0a2647;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --text-muted: #888;
+  --border-color: #0f3460;
+  --blue: #3498DB;
+  --red: #E74C3C;
+  --green: #2ECC71;
+  --yellow: #F39C12;
+}
+
+/* --- Overall Body --- */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* --- Content Wrapper --- */
+.content-wrapper,
+.right-side {
+  background-color: var(--bg-primary);
+}
+
+/* --- Header / Navbar --- */
+.skin-black .main-header .logo {
+  background-color: var(--bg-accent);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.skin-black .main-header .navbar {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--bg-accent);
+}
+
+.skin-black .main-header .logo:hover {
+  background-color: var(--bg-hover);
+}
+
+.skin-black .main-header .navbar .sidebar-toggle {
+  color: var(--text-secondary);
+}
+
+.skin-black .main-header .navbar .sidebar-toggle:hover {
+  color: #fff;
+  background-color: var(--bg-accent);
+}
+
+/* --- Sidebar --- */
+.skin-black .main-sidebar {
+  background-color: var(--bg-secondary);
+  border-right: 1px solid var(--bg-accent);
+}
+
+.skin-black .sidebar-menu > li > a {
+  color: var(--text-secondary);
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.skin-black .sidebar-menu > li.active > a {
+  color: #ffffff;
+  background-color: var(--bg-accent);
+  border-left: 3px solid var(--blue);
+}
+
+.skin-black .sidebar-menu > li > a:hover {
+  color: #ffffff;
+  background-color: rgba(15, 52, 96, 0.6);
+  border-left: 3px solid var(--blue);
+}
+
+.skin-black .sidebar a {
+  color: var(--text-secondary);
+}
+
+.skin-black .treeview-menu > li > a {
+  color: var(--text-secondary) !important;
+}
+
+/* Sidebar section headers */
+.sidebar-section-header {
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 8px 15px 4px 15px;
+}
+
+.sidebar-section-header .fa,
+.sidebar-section-header .fas,
+.sidebar-section-header .far {
+  margin-right: 6px;
+}
+
+/* Sidebar note */
+.sidebar-note {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 11px;
+  padding: 10px 15px;
+  line-height: 1.4;
+}
+
+.sidebar-note .fa,
+.sidebar-note .fas {
+  margin-right: 4px;
+  color: var(--blue);
+}
+
+/* Sidebar labels and inputs */
+.sidebar label {
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.sidebar .form-control {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: border-color 0.2s ease;
+}
+
+.sidebar .form-control:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.sidebar .form-control::placeholder {
+  color: #555;
+  font-style: italic;
+}
+
+/* Selectize inputs */
+.sidebar .selectize-input {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+.sidebar .selectize-input.focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.sidebar .selectize-dropdown {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 0 0 6px 6px;
+}
+
+.sidebar .selectize-dropdown .active {
+  background-color: var(--bg-accent);
+}
+
+/* Apply button */
+.btn-apply {
+  background: linear-gradient(135deg, var(--blue), #2980b9);
+  color: #ffffff !important;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 0;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-apply:hover {
+  background: linear-gradient(135deg, #2eaadc, var(--blue));
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+  color: #ffffff !important;
+}
+
+.btn-apply:active {
+  transform: translateY(0);
+}
+
+/* Slider styling */
+.irs--shiny .irs-bar {
+  background: var(--blue);
+  border-top: 1px solid var(--blue);
+  border-bottom: 1px solid var(--blue);
+}
+
+.irs--shiny .irs-handle {
+  background-color: var(--blue);
+  border: 2px solid #2980b9;
+  border-radius: 50%;
+}
+
+.irs--shiny .irs-single {
+  background-color: var(--blue);
+  border-radius: 4px;
+}
+
+.irs--shiny .irs-line {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+}
+
+.irs--shiny .irs-min,
+.irs--shiny .irs-max {
+  color: var(--text-muted);
+  background: transparent;
+}
+
+/* --- Box Styling --- */
+.box {
+  background-color: var(--bg-secondary);
+  border-top: 3px solid var(--bg-accent);
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.box-header {
+  color: var(--text-primary);
+  padding: 12px 15px;
+}
+
+.box-header .box-title {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.box-header .box-title .fa,
+.box-header .box-title .fas {
+  margin-right: 6px;
+  opacity: 0.7;
+}
+
+.box-body {
+  padding: 15px;
+}
+
+/* Box header colors by status */
+.box.box-solid.box-primary > .box-header {
+  background: linear-gradient(135deg, var(--bg-accent), #0a2647);
+  border-radius: 5px 5px 0 0;
+}
+
+.box.box-solid.box-success > .box-header {
+  background: linear-gradient(135deg, #1a6e3a, #145530);
+  border-radius: 5px 5px 0 0;
+}
+
+.box.box-solid.box-warning > .box-header {
+  background: linear-gradient(135deg, #8a6d0b, #6b5509);
+  border-radius: 5px 5px 0 0;
+}
+
+.box.box-solid.box-info > .box-header {
+  background: linear-gradient(135deg, #1a5276, #144060);
+  border-radius: 5px 5px 0 0;
+}
+
+/* --- Chart Container --- */
+.chart-container {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* --- Info Panel (sidebar help boxes) --- */
+.info-panel {
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.info-panel h4 {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.info-panel p {
+  margin-bottom: 10px;
+}
+
+.info-panel a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.info-panel a:hover {
+  text-decoration: underline;
+}
+
+.info-panel ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.info-panel li {
+  margin-bottom: 6px;
+}
+
+.info-panel hr {
+  border-color: var(--border-color);
+  margin: 12px 0;
+}
+
+/* Color dots for legend explanation */
+.color-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.dot-blue { background-color: var(--blue); }
+.dot-red { background-color: var(--red); }
+.dot-green { background-color: var(--green); }
+
+/* Tip text */
+.tip-text {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-style: italic;
+}
+
+.tip-text .fa,
+.tip-text .fas {
+  color: var(--yellow);
+  margin-right: 4px;
+}
+
+/* Table description text */
+.table-description {
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.table-description a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.table-description a:hover {
+  text-decoration: underline;
+}
+
+/* --- DataTables Styling --- */
+.dataTables_wrapper {
+  color: var(--text-primary);
+}
+
+table.dataTable {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+table.dataTable thead th {
+  background-color: var(--bg-accent);
+  color: #ffffff;
+  border-bottom: 2px solid var(--blue);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 12px;
+}
+
+table.dataTable tbody tr {
+  background-color: var(--bg-secondary);
+  transition: background-color 0.15s ease;
+}
+
+table.dataTable tbody tr:nth-child(even) {
+  background-color: rgba(15, 52, 96, 0.2);
+}
+
+table.dataTable tbody tr:hover {
+  background-color: var(--bg-accent) !important;
+}
+
+table.dataTable tbody td {
+  border-color: rgba(15, 52, 96, 0.3);
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+  color: var(--text-secondary) !important;
+  font-size: 12px;
+}
+
+.dataTables_filter input {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.dataTables_filter input:focus {
+  border-color: var(--blue);
+  outline: none;
+}
+
+.dataTables_length select {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.paginate_button {
+  color: var(--text-secondary) !important;
+}
+
+.paginate_button.current {
+  background: var(--bg-accent) !important;
+  color: #fff !important;
+  border-color: var(--blue) !important;
+}
+
+.paginate_button:hover {
+  background: var(--bg-accent) !important;
+  color: #fff !important;
+}
+
+/* --- Formattable Table Overrides --- */
+.formattable-table {
+  color: var(--text-primary);
+  width: 100%;
+  font-size: 13px;
+}
+
+.formattable-table th {
+  background-color: var(--bg-accent);
+  color: #ffffff;
+  padding: 10px 12px;
+  border-bottom: 2px solid var(--blue);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.formattable-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(15, 52, 96, 0.3);
+}
+
+.formattable-table tr:hover td {
+  background-color: rgba(15, 52, 96, 0.3);
+}
+
+/* --- Data Toolbar --- */
+.data-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 5px 0;
+}
+
+.data-toolbar-info {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+/* --- Download Button --- */
+.btn-download,
+.btn-default {
+  background-color: var(--bg-accent);
+  color: var(--text-primary);
+  border: 1px solid var(--blue);
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-download:hover,
+.btn-default:hover {
+  background-color: var(--blue);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-download .fa,
+.btn-download .fas {
+  margin-right: 4px;
+}
+
+/* --- Footer --- */
+.app-footer {
+  text-align: center;
+  padding: 15px 10px;
+  color: var(--text-muted);
+  font-size: 11px;
+  border-top: 1px solid var(--border-color);
+  margin-top: 20px;
+}
+
+.app-footer a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.app-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-separator {
+  margin: 0 8px;
+  color: var(--border-color);
+}
+
+/* Older main-footer from shinydashboard */
+.main-footer {
+  background-color: var(--bg-secondary);
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-color);
+}
+
+/* --- Horizontal Rule in Sidebar --- */
+.sidebar hr {
+  border-color: var(--border-color);
+  margin: 10px 15px;
+}
+
+/* --- Tab Content Area --- */
+.tab-content > .tab-pane {
+  padding: 0;
+}
+
+.nav-tabs-custom {
+  background-color: var(--bg-secondary);
+}
+
+.nav-tabs-custom > .nav-tabs > li.active > a {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.nav-tabs-custom > .nav-tabs > li > a {
+  color: var(--text-secondary);
+}
+
+/* --- Plotly Modebar Styling --- */
+.modebar {
+  opacity: 0.4;
+  transition: opacity 0.2s;
+}
+
+.modebar:hover {
+  opacity: 1;
+}
+
+.modebar-btn svg {
+  fill: var(--text-secondary) !important;
+}
+
+.modebar-btn:hover svg {
+  fill: var(--blue) !important;
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 768px) {
+  .info-panel {
+    font-size: 12px;
+  }
+
+  .sidebar-section-header {
+    font-size: 10px;
+  }
+}
+
+/* --- Validation message styling --- */
+.shiny-output-error-validation {
+  color: var(--yellow) !important;
+  font-size: 14px;
+  text-align: center;
+  padding: 40px 20px;
+}
